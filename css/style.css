@@ -1,0 +1,258 @@
+* {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    line-height: 170%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3f3f3f;
+}
+
+a {
+    display: initial;
+}
+
+#left-side p,
+#left-side ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+#left-side #p1 {
+    border-bottom: none;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+title {
+    display: block;
+    background-color: #ffffff;
+    color: #666666;
+    padding: 0.3em 0em 0.3em 0.5em;
+    font-size: 13px;
+}
+
+body {
+    color: #3f3f3f;
+    scroll-behavior: smooth;
+
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-image: linear-gradient(to top right, rgb(64, 155, 140), rgb(87, 174, 201), rgb(144, 103, 209));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+h1 {
+    display:block;
+    text-align: center;
+    padding: 1em;
+    color: #ffffff;
+    margin:0;
+    width:70%;
+}
+
+
+header {
+    display: block;
+    width: 100%;
+    
+    background-color: #ffffff15;
+}
+
+ol li,
+ul li {
+    display: list-item;
+}
+
+ol li {
+    padding-top: 1em;
+}
+
+ul li {
+    padding-top: 0em;
+}
+
+ol {
+    margin-left: 2em;
+}
+
+ul {
+    width: 95%;
+}
+
+#container {
+    margin:0 auto;
+    display: block;
+    max-width: 850px;
+    width: 90%;
+}
+
+#left-side {
+    display: block;
+    margin: 0;
+    grid-column: 1/3;
+    padding: 1em 1em 1em 1em;
+    background-color: #ffffffdc;
+}
+
+
+#main-menu {
+    text-align: center;
+    padding: 0;
+    display: block;
+    border-top: 1px solid #ffffff;
+}
+
+#main-menu ul {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main-menu li {
+    text-align: center;
+    display: inline-block;
+}
+
+#main-menu li a {
+    text-align: center;
+    display: block;
+    border-radius: 180px;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0.2em;
+    color: #ffffff;
+    border: 1px solid #ffffff00;
+}
+
+p {
+    color: #666666;
+}
+
+label {
+    color: #666666;
+    padding: 1em 1em 0.3em 0.5em;
+
+}
+
+.post input {
+    outline: none;
+    border: none;
+    border: 1px solid #87adb4;
+    padding: 0.6em 1em 0.6em 1em;
+    margin: 0.5em;
+    font-size: 15px;
+}
+
+.post textarea {
+    width: 95%;
+    min-height: 100px;
+    padding: 0.6em 0em 0.6em 1em;
+    margin: 0.5em;
+    outline: none;
+    border: none;
+    border: 1px solid #87adb4;
+    font-size: 15px;
+}
+
+#submit {
+    outline: none;
+    background-image: linear-gradient(to top right, rgb(64, 155, 140), rgb(87, 174, 201));
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 0.6em 0.8em 0.6em 0.8em;
+}
+
+#logout {
+    background-color: #8a8a8a;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 0.6em 0.8em 0.6em 0.8em;
+}
+
+#admin {
+    margin-top: 1em;
+}
+
+#widget-container {
+    margin-top: 1.2em;
+    border: 2px solid #87adb4;
+    width: 90%;
+    max-width: 250px;
+    height: 200px;
+    overflow: scroll;
+}
+
+#widget-container article {
+    width: 90%;
+    max-width: 250px;
+}
+
+.posts-printed a {
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 0.6em 0.8em 0.6em 0.8em;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    grid-column: 1/4;
+    background-color: #ffffff15;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+@media screen and (max-width:500px) {
+    #left-side {
+        grid-column: 1/3;
+  
+    }
+
+    .message-form textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:800px) {
+    #left-side {
+        grid-column: 1/3;
+      
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    #left-side {
+        grid-column: 1/4;
+        padding: 1em 2em 2em 2em;
+    }
+
+    #main-menu li a:hover {
+        transition: ease-in-out .4s;
+        background-image: none;
+        background-color: #ffffff2a;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+}
